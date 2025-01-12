@@ -16,6 +16,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 64px;
+    width: 70%;
+    margin: 0 auto;
 
 }
 

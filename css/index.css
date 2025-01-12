@@ -102,6 +102,13 @@ header img {
     margin-top: 150px;
     flex: 1;
     justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.logo-gauche {
+    width: 200px;
+
 }
 
 footer {
