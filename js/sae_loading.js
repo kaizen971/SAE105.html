@@ -14,19 +14,18 @@ for (let i = 0; i < sae_number.length; i++) {
 for(let t = 0; t<sae_number.length; t++) {
     let tmp = ""
     // Décomposition des compétences multiples et insertion dans un marquee
-    if(comp[t].length>1) {
-        let tmp2 =""
-        comp[t].forEach(e => {
-            tmp2+=e+" ";
-        })
+    // if(comp[t].length>1) {
+    //     let tmp2 =""
+    //     comp[t].forEach(e => {
+    //         tmp2+=e+" ";
+    //     })
         
-        tmp+='<div class="skills-tag"><marquee direction="left" scrollamount="6">'+tmp2+'</marquee></div>';
-    }
+    //     tmp+='<div class="skills-tag"><marquee direction="left" scrollamount="6">'+tmp2+'</marquee></div>';
+    // }
     
     // Ajout d'une compétence unique dans une div
-    else {
         tmp+='<div class="skills-tag">'+comp[t]+'</div>'
-    }
+    
 
     // Construction de la carte projet avec les valeurs
     zone_projects += `<div onclick="location.href='sae_detail.html?sae=${sae_number[t]}'" class="project-card" style="cursor: pointer;">
